@@ -6,7 +6,7 @@ let rightPins = null;
 module.exports = {
     type: 'motorZero',
     init,
-    forward,
+    speed,
     stop,
 };
 
@@ -21,7 +21,7 @@ function init(leftMotor = 1, rightMotor = 2) {
     rightPins = createAndInitMotorPins(rightMotor);
 }
 
-function forward(left = 1, right = 1) {
+function speed(left = 1, right = 1) {
     rpio.write(leftPins.positive, rpio.HIGH);
     rpio.write(leftPins.enable, rpio.HIGH);
 
