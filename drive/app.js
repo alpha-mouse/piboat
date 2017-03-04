@@ -11,7 +11,7 @@ if (isProd) {
 } else {
     drive = require('./drives/debugDrive');
 }
-const driveRoute = require('./routes/drive')(drive);
+const driveRoute = require('./driveRoutes')(drive);
 
 const app = express();
 
