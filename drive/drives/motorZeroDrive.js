@@ -12,8 +12,8 @@ module.exports = {
 
 /**
  * Initialize raspberry pi gpio pins to run motors via motorzero
- * @param {number} leftMotor - motorzero output port powering left motor
- * @param {number} rightMotor - motorzero output port powering right motor
+ * @param {number} leftMotor - motorzero output terminal powering left motor
+ * @param {number} rightMotor - motorzero output terminal powering right motor
  */
 function init(leftMotor = 1, rightMotor = 2) {
     rpio.init({mapping: 'gpio'});

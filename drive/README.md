@@ -1,5 +1,5 @@
 1. Attach MotorZero to the raspberry.
-2. Connect left motor to output 4, right to 1. If other outputs are used, edit app.js to init MotorZero drive with other outputs.
+2. Connect left motor to terminal 4, right to 1. If other terminal are used, edit app.js to init MotorZero drive with other terminals.
 3. Connect power source.
 4. git clone this repo to raspberry and go to /drive folder within.
 5. npm install.
